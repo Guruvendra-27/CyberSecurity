@@ -241,3 +241,7 @@ Welcome to the **Tools** This section organizes all the tools used for email ana
   - Security research.
 - **URL**: [PhishTank](https://www.phishtank.com/)
 
+---
+
+Feel free to explore these tools and use them to enhance your email analysis and security efforts. If you have additional resources to share, please contribute to this section
+
