@@ -1,4 +1,4 @@
-# Tools Directory
+# Tools
 
 Welcome to the **Tools Directory**! This section organizes all the tools used for email analysis into categories, providing detailed descriptions and links for each tool. Explore the tools based on your requirements and leverage them to enhance your email security workflows.
 
