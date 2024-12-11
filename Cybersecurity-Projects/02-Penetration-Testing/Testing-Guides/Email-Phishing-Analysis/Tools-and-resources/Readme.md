@@ -50,18 +50,11 @@ The Resources Directory is here to help you learn more about email security. It 
 
 ---
 
-## Contribute to the Directory
-
-This directory is always growing, and you can help. If you know of a tool or resource that should be added, let us know.
-
-### How to Contribute
-
-1. Suggest a new tool or resource by providing its name, description, and link.
-2. Share feedback to make this directory better.
-
----
-
 ## Closing Note
 
 Email security can seem overwhelming, but with the right tools and resources, you can make it easier and safer. This directory is here to guide you, whether you’re just starting or looking for advanced tools to improve your workflow.
+
+---
+
+Feel free to explore these tools & resources directory and use them to enhance your email analysis and security efforts. If you have additional resources to share, please contribute to this section
 
