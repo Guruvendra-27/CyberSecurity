@@ -1,6 +1,6 @@
 # Resources
 
-Welcome to the **Resources** section! This collection of references, guides, and documentation aims to support your email analysis and security tasks. These resources are grouped into categories for easy navigation, ensuring you can quickly access the information or help you need.
+Welcome to the **Resources** section. This collection of references, guides, and documentation aims to support your email analysis and security tasks. These resources are grouped into categories for easy navigation, ensuring you can quickly access the information or help you need.
 
 ---
 
