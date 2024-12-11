@@ -92,5 +92,5 @@ Welcome to the **Resources** section. This collection of references, guides, and
 
 ---
 
-Feel free to explore these resources and use them to enhance your email analysis and security efforts. If you have additional resources to share, please contribute to this section!
+Feel free to explore these resources and use them to enhance your email analysis and security efforts. If you have additional resources to share, please contribute to this section
 
