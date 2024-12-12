@@ -1,4 +1,4 @@
-# Tools and Resources Directory
+# Tools and Resources List
 
 Welcome to the **Tools and Resources List**. This guide is here to help you find and use tools and resources for email security and analysis. It’s written with beginners in mind, so everything is explained in a simple and easy-to-follow way.
 
