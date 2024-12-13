@@ -36,6 +36,7 @@ This guide outlines the steps to acquire memory from a Linux system using the AV
    ```bash
    wget https://github.com/microsoft/avml/releases/download/v0.2.0/avml
    ```
+   ![download](https://github.com/user-attachments/assets/f404fd41-0fd7-4fc9-a8d7-f392f598477e)
 
 
 ---
