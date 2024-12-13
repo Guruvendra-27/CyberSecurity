@@ -8,61 +8,61 @@ This guide provides a step-by-step process for acquiring volatile memory from a 
 
 ### Step-by-Step Guide
 
-#### 1. Connect the Pendrive to the Affected Machine
+#### Step 1. Connect the Pendrive to the Affected Machine
 Insert the USB pendrive into the affected system.
 
 ![Connecting Pendrive 1](https://github.com/user-attachments/assets/bba099d3-424f-4d57-a478-86649fa5a0ab)
 
 
-#### 2. Verify Pendrive Connection
+#### Step 2. Verify Pendrive Connection
 Check that the pendrive is connected by opening the **This PC** folder. Ensure the pendrive icon appears in the list of drives.
 
 ![Showing Pendrive 2](https://github.com/user-attachments/assets/2a7b1af2-4314-49a1-927f-d70107575e16)
 
 
-#### 3. Open the Pendrive
+#### Step 3. Open the Pendrive
 Double-click on the pendrive icon to open it and view its contents.
 
 ![open the dumpit folder 1](https://github.com/user-attachments/assets/ce8755b6-98f2-4ae6-90da-7a579392d90d)
 
 
-#### 4. Start the DumpIt Application
+#### Step 4. Start the DumpIt Application
 Inside the pendrive, locate the **DumpIt** application. Start the application by double-clicking its icon.
 
 ![starting dumpti application](https://github.com/user-attachments/assets/4945092c-3acf-44ae-8eb5-bdf9edb47228)
 
 
-#### 5. Grant Administrative Access
+#### Step 5. Grant Administrative Access
 When prompted, click **Yes** to grant the application administrative access. This is necessary for DumpIt to perform memory acquisition.
 
 ![click on yes](https://github.com/user-attachments/assets/341787a4-0a5a-4917-95b2-a14088a01251)
 
 
-#### 6. DumpIt Command Prompt Window
+#### Step 6. DumpIt Command Prompt Window
 Once DumpIt starts, a command prompt window will pop up. This window will guide you through the memory acquisition process.
 
 ![dumpit it pop up window](https://github.com/user-attachments/assets/f535a56a-3c2d-46f4-8b1b-28794e845d55)
 
 
-#### 7. Begin Memory Acquisition
+#### Step 7. Begin Memory Acquisition
 Type **"y"** when prompted to confirm the start of the memory acquisition process. DumpIt will begin capturing the system's memory and saving it as a file on the pendrive. The file size will depend on the amount of RAM in the machine.
 
 ![processing started](https://github.com/user-attachments/assets/237ee728-7323-4b84-80d2-9d9e35bcc633)
 
 
-#### 8. File Creation
+#### Step 8. File Creation
 After the process completes, a memory dump file will be saved in the pendrive. This file contains the complete memory state of the system at the time of acquisition, including volatile data that could be lost upon shutting down the system.
 
 ![Memory Acquisition file created](https://github.com/user-attachments/assets/1cc092c4-5f86-4696-b2e8-25c923f782ea)
 
 
-#### 9. Safely Eject the Pendrive
+#### Step 9. Safely Eject the Pendrive
 For data integrity, always safely eject the pendrive. This ensures that the memory dump file remains intact and prevents potential data loss.
 
 ![eject](https://github.com/user-attachments/assets/dd67ecc7-77df-4f24-a02a-ea866096a834)
 
 
-#### 10. Analyze the Memory Dump
+#### Step 10. Analyze the Memory Dump
 With the memory dump file safely stored, connect the pendrive to a dedicated forensic workstation. Use forensic tools to analyze the memory dump and identify potential malicious activity or software on the affected system.
 
 ---
