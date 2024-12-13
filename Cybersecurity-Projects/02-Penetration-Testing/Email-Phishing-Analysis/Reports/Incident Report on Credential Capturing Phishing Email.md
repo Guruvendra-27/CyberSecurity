@@ -1,4 +1,4 @@
-# Credential Capturing Phishing Email-Threat Analysis and Incident Report
+# Incident Report on Credential Capturing Phishing Email
 
 ---
 ## **1. General Information:**
