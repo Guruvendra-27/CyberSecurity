@@ -17,7 +17,7 @@ This guide outlines the steps to acquire memory from a Linux system using the AV
 ---
 
 #### Step 2: Select Desired Version
-1. Visit the official AVML GitHub repository.
+1. Visit the official [AVML GitHub repository](https://github.com/microsoft/avml).
 2. Navigate to the **Releases** section and select the required version (e.g., **v0.2.0**).
    
    ![selecting version](https://github.com/user-attachments/assets/6c5d4c3b-a3db-4093-9edd-2d4caf173f67)
