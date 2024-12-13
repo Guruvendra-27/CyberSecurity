@@ -84,9 +84,11 @@ This guide outlines the steps to acquire memory from a Linux system using the AV
    
 2. Open the root folder with appropriate privileges to access the dump file:
    - Use a file manager or terminal to navigate.
+     
+     ![open the root folder as root](https://github.com/user-attachments/assets/8377e0e4-3b91-4946-b138-507ddf6edfeb)
+
    - Enter the root password if prompted.
   
-     ![open the root folder as root](https://github.com/user-attachments/assets/8377e0e4-3b91-4946-b138-507ddf6edfeb)
      ![root passwd](https://github.com/user-attachments/assets/18e42507-f8d0-434d-8b18-b8607d476381)
 
   
