@@ -1,4 +1,4 @@
-# Memory Acquisition of Windows Using DumpIt Application Procedure
+# Memory Acquisition of Windows Using DumpIt Application
 
 ### Introduction
 
