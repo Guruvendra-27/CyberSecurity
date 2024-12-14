@@ -1,4 +1,4 @@
-# Memory Acquisition on Linux Using AVML Tool
+# Memory Acquisition of Linux Using AVML Tool Procedure
 
 ### Introduction
 This guide outlines the steps to acquire memory from a Linux system using the AVML (Acquisition of Volatile Memory for Linux) tool. Memory acquisition is essential in forensic investigations to capture volatile data for analysis.
