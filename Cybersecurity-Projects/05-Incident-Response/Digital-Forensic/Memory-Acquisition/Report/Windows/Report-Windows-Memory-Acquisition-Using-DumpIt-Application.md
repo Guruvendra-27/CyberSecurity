@@ -1,11 +1,11 @@
 ## Report on Memory Acquisition of Windows Using DumpIt Application
 
-**Introduction**
+### Introduction
 This report documents the process of acquiring volatile memory from a Windows system using the DumpIt application. Memory acquisition captures the active state of a system, providing critical forensic evidence for digital investigations. This procedure was executed to preserve system memory for further analysis.
 
 ---
 
-**Procedure Overview**
+### Procedure Overview
 
 **1. Connecting the USB Drive**
 The USB pendrive containing the DumpIt application was inserted into the affected system. The connection was verified by ensuring the pendrive appeared in the system’s file explorer.
@@ -39,12 +39,12 @@ Once the acquisition process completed, the memory dump file was confirmed to be
 
 ---
 
-**Outcome**
+### Outcome
 A memory dump file corresponding to the system’s RAM size was successfully created. This file contains the volatile data, including active processes, loaded modules, and network activity, at the time of acquisition. The file will be utilized for forensic analysis on a dedicated workstation.
 
 ---
 
-**Forensic Analysis Tools**
+### Forensic Analysis Tools
 The memory dump will be analyzed using trusted forensic tools. The following tools are recommended:
 
 - **Volatility**: To extract and analyze memory artifacts, such as processes and network connections.
@@ -56,11 +56,11 @@ The memory dump will be analyzed using trusted forensic tools. The following too
 
 ---
 
-**Recommendations and Notes**
+### Recommendations and Notes
 - Ensure the pendrive has sufficient space to store the memory dump, which matches the size of the system’s RAM.
 - Always perform the acquisition process on a secure and isolated system.
 - Use trusted forensic tools to analyze the memory dump to maintain the integrity of evidence.
 
-**Conclusion**
+### Conclusion
 The memory acquisition process was completed successfully, preserving volatile system data for forensic examination. The resulting memory dump will be analyzed to uncover evidence of potential malicious activity or system compromise.
 
