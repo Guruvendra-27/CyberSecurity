@@ -5,8 +5,6 @@ This report documents the process of acquiring volatile memory from a Windows sy
 
 ---
 
-### Procedure Overview
-
 **1. Connecting the USB Drive**
 The USB pendrive containing the DumpIt application was inserted into the affected system. The connection was verified by ensuring the pendrive appeared in the system’s file explorer.
 
