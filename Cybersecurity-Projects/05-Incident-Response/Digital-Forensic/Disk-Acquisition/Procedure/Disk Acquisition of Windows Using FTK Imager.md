@@ -46,13 +46,11 @@ This guide explains how to acquire disk data from a Windows system using FTK Ima
       ![installation wizard](https://github.com/user-attachments/assets/dcc6d11a-6af4-4717-99b6-269e4e5f98f4)
       ![installation wizard 2](https://github.com/user-attachments/assets/0f93d734-45bd-4424-b481-694e788d7ca6)
 
-    - Choose the Different installation folder or use the default location. 
-    
+    - Choose the Different installation folder or use the default location.
        ![Pasted image 20241217223124](https://github.com/user-attachments/assets/29830158-73b1-4897-883e-87ae84793768)
 
     - Click **Install** to complete the setup.
     - Once the installation is finished, click **Finish** to exit the wizard.
-    
       ![finsish](https://github.com/user-attachments/assets/52724971-a37b-4732-a6a8-70ae9fb59979)
 
 
@@ -61,21 +59,20 @@ This guide explains how to acquire disk data from a Windows system using FTK Ima
 #### Step 3: Launch FTK Imager
 
 1. Locate the **FTK Imager** shortcut on your desktop and double-click to open the program.
-
-    ![icon](https://github.com/user-attachments/assets/4878c72a-bc09-42c5-8582-f1b0abcfe606)
+   ![icon](https://github.com/user-attachments/assets/4878c72a-bc09-42c5-8582-f1b0abcfe606)
    ![ftk start yes 1](https://github.com/user-attachments/assets/21a5570a-9208-488e-95ee-df24540a51f3)
 
 
    
 2. From the top menu, go to **File** > **Create Disk Image** to begin acquiring data from the disk.
-    ![create disk image](https://github.com/user-attachments/assets/97f2c902-20f6-4aa5-bfe4-b293ccf24edd)
+   ![create disk image](https://github.com/user-attachments/assets/97f2c902-20f6-4aa5-bfe4-b293ccf24edd)
 
 ---
 
 #### Step 4: Select Source and Destination
 
 1. In the **Create Disk Image** wizard, select **Logical Drive** as the source type. This option captures only the used disk space of the drive.
-    ![logical drive](https://github.com/user-attachments/assets/a0171916-0e7f-4fdd-9477-7bc94e31aaef)
+   ![logical drive](https://github.com/user-attachments/assets/a0171916-0e7f-4fdd-9477-7bc94e31aaef)
 
 2. Select the specific drive you want to image and click **Next**.
     ![select drive 1](https://github.com/user-attachments/assets/1cb57147-a5b5-4ace-9ba9-5fdc31021f5a)
@@ -109,13 +106,12 @@ This guide explains how to acquire disk data from a Windows system using FTK Ima
 #### Step 6: Downloading and Installing WinRAR Application (Optional)
 
 In order to Copy the Disk image file we need WinRAR Application following are the steps to Download WinRAR:
-    1. Open your browser and search for "WinRAR download."
+   1. Open your browser and search for "WinRAR download."
         ![winrar file](https://github.com/user-attachments/assets/c9b10e67-94f3-4b5b-a704-0f7eccb29438)
 
-    3. Go to the WinRAR Download Page and Download and Follow the Installation steps.
-        ![winrar download](https://github.com/user-attachments/assets/fb75350a-6aee-4cff-a589-1faab801dcf0)
-        ![winrar downloaded](https://github.com/user-attachments/assets/dd382068-a115-4902-852d-7e1711ca3988)
-
+   2. Go to the WinRAR Download Page and Download and Follow the Installation steps.
+       ![winrar download](https://github.com/user-attachments/assets/154d364f-7902-4bf7-bd5a-4fd9c6063448)
+       ![winrar downloaded](https://github.com/user-attachments/assets/fd264eca-cc42-4f1f-a921-54ac59f4b807)
 
 ---
 
