@@ -1,4 +1,4 @@
-**Report on Memory Acquisition of Windows Using DumpIt Application**
+## Report on Memory Acquisition of Windows Using DumpIt Application
 
 **Introduction**
 This report documents the process of acquiring volatile memory from a Windows system using the DumpIt application. Memory acquisition captures the active state of a system, providing critical forensic evidence for digital investigations. This procedure was executed to preserve system memory for further analysis.
