@@ -1,6 +1,5 @@
 ## Report on Disk Acquisition of Windows Using FTK Imager
 
----
 
 ### **Introduction**
 
