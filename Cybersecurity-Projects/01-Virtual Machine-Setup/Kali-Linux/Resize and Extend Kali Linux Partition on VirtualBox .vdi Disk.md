@@ -158,4 +158,4 @@ Before starting, ensure you have the following:
 
 ## Contributing
 
-If you have any improvements or suggestions, feel free to fork this project and submit a pull request!
+If you have any improvements or suggestions, feel free to fork this project and submit a pull request
