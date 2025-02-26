@@ -77,19 +77,45 @@ Before starting, ensure you have the following:
     In GParted, select the disk (likely `/dev/sda`).
     
 5. **Resize the Partition**  
-    Locate the unallocated space next to your main partition (e.g., `/dev/sda1`).  
-    Right-click on `/dev/sda1` and select **Resize/Move**.  
+    Locate the unallocated space next to your main partition.
+    - Right-click on the partition you want to resize (e.g., `/dev/sda1`).
+    - From the context menu, select **Resize/Move**.
+
+   - **Resize the Partition**:
+     - A new window titled **Resize/Move /dev/sda1** will appear.
+     - Here’s how to use the options in this window:
+   - **Graphical Slider**:
+     - Drag the slider to the right to include the unallocated space.
+     - The slider allows you to visually adjust the partition size.
+   - **Manual Input**:
+     - Alternatively, you can manually enter the new size in the **New size (MiB)** field.
+     - Ensure the new size includes the unallocated space.
+   - **Free Space Following (MiB)**:
+     - This field shows how much space will remain unallocated after resizing.
+     - Set this to `0` if you want to use all the unallocated space.
+   - **Apply the Changes**:
+     - Once you’ve adjusted the partition size, click **Resize/Move** in the window.
+     - This action schedules the resize operation but does not apply it yet.
+   - **Confirm and Apply All Operations**:
+     - Back in the main GParted window, click the green checkmark (**Apply All Operations**) in the toolbar.
+     - A confirmation dialog will appear. Click **Apply** to proceed.
+     - GParted will now resize the partition. This process may take a few minutes, depending on the size of the partition and the amount of data.
+   - **Verify the Resize**:
+     - After the operation completes, check the partition layout in GParted:
+     - The partition (e.g., `/dev/sda1`) should now show the increased size.
+     - The unallocated space should no longer be visible, as it has been merged into the partition.
+    
     Adjust the partition size to utilize the unallocated space, then click **Resize**.  
     Click the **green checkmark (✔)** to apply the changes.
     
-6. **Resize the Filesystem**  
+7. **Resize the Filesystem**  
     After resizing the partition, run:
     
     ```bash
     sudo resize2fs /dev/sda1  
     ```
     
-7. **Verify the New Disk Size**  
+8. **Verify the New Disk Size**  
     Run the following command to confirm the new disk size:
     
     ```bash
