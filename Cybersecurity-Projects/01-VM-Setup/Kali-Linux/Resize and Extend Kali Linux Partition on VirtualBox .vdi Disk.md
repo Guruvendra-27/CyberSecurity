@@ -1,4 +1,4 @@
-# Resize VirtualBox `.vdi` Disk and Extend Partition in Kali Linux
+# Resize and Extend Kali Linux Partition on VirtualBox .vdi Disk
 
 ## Project Overview
 
