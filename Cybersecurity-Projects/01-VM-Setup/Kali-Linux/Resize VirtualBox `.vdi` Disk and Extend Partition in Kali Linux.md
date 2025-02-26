@@ -58,38 +58,38 @@ Before starting, ensure you have the following:
 
 ## Step 2: Extend the Partition in Kali Linux
 
-6. **Boot Into Kali Linux**  
+1. **Boot Into Kali Linux**  
     Start your Kali Linux virtual machine.
     
-7. **Install GParted (if not installed)**
+2. **Install GParted (if not installed)**
     
     ```bash
     sudo apt update && sudo apt install -y gparted  
     ```
     
-8. **Launch GParted**
+3. **Launch GParted**
     
     ```bash
     sudo gparted  
     ```
     
-9. **Identify the Correct Disk**  
+4. **Identify the Correct Disk**  
     In GParted, select the disk (likely `/dev/sda`).
     
-10. **Resize the Partition**  
+5. **Resize the Partition**  
     Locate the unallocated space next to your main partition (e.g., `/dev/sda1`).  
     Right-click on `/dev/sda1` and select **Resize/Move**.  
     Adjust the partition size to utilize the unallocated space, then click **Resize**.  
     Click the **green checkmark (✔)** to apply the changes.
     
-11. **Resize the Filesystem**  
+6. **Resize the Filesystem**  
     After resizing the partition, run:
     
     ```bash
     sudo resize2fs /dev/sda1  
     ```
     
-12. **Verify the New Disk Size**  
+7. **Verify the New Disk Size**  
     Run the following command to confirm the new disk size:
     
     ```bash
@@ -100,13 +100,13 @@ Before starting, ensure you have the following:
 
 ## Step 3: Reboot and Confirm
 
-13. **Reboot the Kali Linux VM**
+1. **Reboot the Kali Linux VM**
     
     ```bash
     sudo reboot  
     ```
     
-14. **Check the Disk Space Again**  
+2. **Check the Disk Space Again**  
     After rebooting, run:
     
     ```bash
