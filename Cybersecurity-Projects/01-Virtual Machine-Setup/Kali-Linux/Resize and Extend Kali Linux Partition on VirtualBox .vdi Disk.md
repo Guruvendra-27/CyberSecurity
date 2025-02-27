@@ -1,161 +1,144 @@
-# Resize and Extend Kali Linux Partition on VirtualBox .vdi Disk
+# Resize and Extend Kali Linux Partition on VirtualBox `.vdi` Disk
 
-## Project Overview
-
-This project provides a detailed guide on how to resize a `.vdi` disk file in VirtualBox and extend the partition inside Kali Linux to utilize the new disk space.
+A step-by-step guide to resize VirtualBox `.vdi` disks and extend partitions in Kali Linux. This guide is designed for beginners and advanced users alike, providing clear instructions and troubleshooting tips.
 
 ---
 
 ## Table of Contents
+1. [Introduction](#introduction)
+2. [Prerequisites](#prerequisites)
+3. [Step 1: Resize the Virtual Disk in VirtualBox](#step-1-resize-the-virtual-disk-in-virtualbox)
+4. [Step 2: Extend the Partition in Kali Linux](#step-2-extend-the-partition-in-kali-linux)
+5. [Troubleshooting](#troubleshooting)
+6. [Contributing](#contributing)
+7. [Support](#support)
 
-- [Prerequisites](#prerequisites)
-- [Step 1: Resize the Virtual Disk in VirtualBox](#step-1-resize-the-virtual-disk-in-virtualbox)
-- [Step 2: Extend the Partition in Kali Linux](#step-2-extend-the-partition-in-kali-linux)
-- [Step 3: Reboot and Confirm](#step-3-reboot-and-confirm)
-- [Troubleshooting](#troubleshooting)
+---
+
+## Introduction
+This guide walks you through the process of resizing a VirtualBox `.vdi` disk and extending the partition in Kali Linux to utilize the additional space. Whether you're running out of disk space or planning to expand your VM's storage, this guide has you covered.
 
 ---
 
 ## Prerequisites
-
 Before starting, ensure you have the following:
-
-- VirtualBox installed on your machine.
-- A Kali Linux virtual machine with a `.vdi` disk.
-- A Command Prompt with Administrator privileges for resizing the `.vdi` disk.
-- Kali Linux VM running with administrative privileges to modify partitions.
+- **VirtualBox** installed on your host machine.
+- A **Kali Linux virtual machine** with a `.vdi` disk.
+- **Administrative privileges** on both the host machine and Kali Linux.
+- A **backup** or snapshot of your VM (recommended).
 
 ---
 
 ## Step 1: Resize the Virtual Disk in VirtualBox
 
-1. **Shut Down Your Kali Linux VM**  
-    Ensure your VM is completely powered off, not in a saved or paused state.
-    
-2. **Open Command Prompt as Administrator**  
-    Press `Win + R`, type `cmd`, and press `Ctrl + Shift + Enter`.
-    
-3. **Navigate to the VirtualBox Installation Directory**
-    
-    ```bash
-    cd "C:\Program Files\Oracle\VirtualBox"  
-    ```
-    
-4. **Resize the Virtual Disk**  
-    Use the following command to resize your `.vdi` disk (adjust the path and size as necessary):
-    
-    ```bash
-    VBoxManage modifymedium disk "C:\Kali Linux\dragon\dragon\dragon_7.vdi" --resize 100000  
-    ```
-    
-    Replace `100000` with the desired disk size in MB (e.g., `100000` for 100GB).  
-    Verify that the `.vdi` file path matches exactly where the `.vdi` file is located.
-    
-5. **Verify the New Disk Size**  
-    In VirtualBox, go to **File** > **Virtual Media Manager** and confirm the disk size has been updated.
+### 1.1 Shut Down Your Kali Linux VM
+- Ensure your Kali Linux VM is completely powered off. Do not leave it in a saved or paused state.
+
+### 1.2 Open Command Prompt as Administrator
+- On Windows:
+  - Press `Win + R`, type `cmd`, and press `Ctrl + Shift + Enter` to open Command Prompt with Administrator privileges.
+- On Linux/macOS:
+  - Open a terminal.
+
+### 1.3 Navigate to the VirtualBox Installation Directory
+- On Windows:
+  ```bash
+  cd "C:\Program Files\Oracle\VirtualBox"
+  ```
+- On Linux/macOS:
+  ```bash
+  cd /usr/bin
+  ```
+
+### 1.4 Resize the Virtual Disk
+- Use the `VBoxManage` command to resize the `.vdi` disk. For example:
+  ```bash
+  VBoxManage modifymedium disk "C:\path\to\dragon_7.vdi" --resize 100000
+  ```
+  - Replace `C:\path\to\dragon_7.vdi` with the full path to your `.vdi` file.
+  - Replace `100000` with the desired size in MB (e.g., `100000` = 100GB).
+
+### 1.5 Verify the New Disk Size
+- Open VirtualBox.
+- Go to **File** > **Virtual Media Manager**.
+- Check that the disk size has been updated.
 
 ---
 
 ## Step 2: Extend the Partition in Kali Linux
 
-1. **Boot Into Kali Linux**  
-    Start your Kali Linux virtual machine.
-    
-2. **Install GParted (if not installed)**
-    
-    ```bash
-    sudo apt update && sudo apt install -y gparted  
-    ```
-    
-3. **Launch GParted**
-    
-    ```bash
-    sudo gparted  
-    ```
-    
-4. **Identify the Correct Disk**  
-    In GParted, select the disk (likely `/dev/sda`).
-    
-5. **Resize the Partition**  
-    Locate the unallocated space next to your main partition.
-    - Right-click on the partition you want to resize (e.g., `/dev/sda1`).
-    - From the context menu, select **Resize/Move**.
+### 2.1 Boot Into Kali Linux
+- Start your Kali Linux VM.
 
-   - **Resize the Partition**:
-     - A new window titled **Resize/Move /dev/sda1** will appear.
-     - Here’s how to use the options in this window:
-   - **Graphical Slider**:
-     - Drag the slider to the right to include the unallocated space.
-     - The slider allows you to visually adjust the partition size.
-   - **Manual Input**:
-     - Alternatively, you can manually enter the new size in the **New size (MiB)** field.
-     - Ensure the new size includes the unallocated space.
-   - **Free Space Following (MiB)**:
-     - This field shows how much space will remain unallocated after resizing.
-     - Set this to `0` if you want to use all the unallocated space.
-   - **Apply the Changes**:
-     - Once you’ve adjusted the partition size, click **Resize/Move** in the window.
-     - This action schedules the resize operation but does not apply it yet.
-   - **Confirm and Apply All Operations**:
-     - Back in the main GParted window, click the green checkmark (**Apply All Operations**) in the toolbar.
-     - A confirmation dialog will appear. Click **Apply** to proceed.
-     - GParted will now resize the partition. This process may take a few minutes, depending on the size of the partition and the amount of data.
-   - **Verify the Resize**:
-     - After the operation completes, check the partition layout in GParted:
-     - The partition (e.g., `/dev/sda1`) should now show the increased size.
-     - The unallocated space should no longer be visible, as it has been merged into the partition.
-    
-    Adjust the partition size to utilize the unallocated space, then click **Resize**.  
-    Click the **green checkmark (✔)** to apply the changes.
-    
-7. **Resize the Filesystem**  
-    After resizing the partition, run:
-    
-    ```bash
-    sudo resize2fs /dev/sda1  
-    ```
-    
-8. **Verify the New Disk Size**  
-    Run the following command to confirm the new disk size:
-    
-    ```bash
-    df -h  
-    ```
+### 2.2 Open a Terminal
+- Launch a terminal in Kali Linux.
 
----
+### 2.3 Install GParted (if not installed)
+- GParted is a graphical partition editor. Install it using:
+  ```bash
+  sudo apt update && sudo apt install -y gparted
+  ```
 
-## Step 3: Reboot and Confirm
+### 2.4 Launch GParted
+- Run GParted with root privileges:
+  ```bash
+  sudo gparted
+  ```
 
-1. **Reboot the Kali Linux VM**
-    
-    ```bash
-    sudo reboot  
-    ```
-    
-2. **Check the Disk Space Again**  
-    After rebooting, run:
-    
-    ```bash
-    df -h  
-    ```
-    
-    Verify that the new space is now available.
+### 2.5 Identify the Correct Disk
+- In GParted:
+  - Select the correct disk (e.g., `/dev/sda`).
+  - Locate the partition you want to resize (e.g., `/dev/sda1`).
+  - You should see **unallocated space** next to the partition.
+
+### 2.6 Resize the Partition
+- Right-click the partition (e.g., `/dev/sda1`) and select **Resize/Move**.
+- Drag the slider to include the unallocated space or manually enter the new size.
+- Click **Resize/Move** to apply the changes.
+
+### 2.7 Apply Changes
+- Click the green checkmark (**Apply All Operations**) in GParted to confirm and apply the changes.
+
+### 2.8 Resize the Filesystem
+- After resizing the partition, run:
+  ```bash
+  sudo resize2fs /dev/sda1
+  ```
+  - Replace `/dev/sda1` with the correct partition if necessary.
+
+### 2.9 Verify the New Disk Size
+- Run the following command to confirm the new disk size:
+  ```bash
+  df -h
+  ```
+  - You should see the increased size for your root partition.
 
 ---
 
 ## Troubleshooting
+### Problem 1: GParted Doesn’t Show Unallocated Space
+- **Solution**:
+  - Refresh the partition table in GParted.
+  - Reboot your Kali Linux VM and check again.
 
-- **Problem:** GParted doesn't show the unallocated space after resizing the `.vdi`.  
-    **Solution:** Try refreshing the partition table in GParted, or reboot your Kali Linux VM and retry.
-    
-- **Problem:** The disk space doesn't reflect after reboot.  
-    **Solution:** Ensure you've resized the partition properly in GParted and run `resize2fs` on the correct partition.
-    
-- **Problem:** `VBoxManage` gives an error about file paths.  
-    **Solution:** Double-check the file path for the `.vdi` disk and ensure it's correctly typed in the command.
+### Problem 2: Disk Space Doesn’t Reflect After Reboot
+- **Solution**:
+  - Ensure you resized the partition properly in GParted.
+  - Run `resize2fs` on the correct partition.
+
+### Problem 3: `VBoxManage` Gives an Error About File Paths
+- **Solution**:
+  - Double-check the file path for the `.vdi` disk.
+  - Ensure the path is correctly typed in the command.
 
 ---
 
 ## Contributing
+If you have any improvements or suggestions, feel free to fork this project and submit a pull request! Your contributions are welcome.
 
-If you have any improvements or suggestions, feel free to fork this project and submit a pull request
+---
+
+## Support
+If you found this guide helpful, consider giving it a ⭐ on GitHub! For questions or issues, open an issue in the repository.
+
+---
