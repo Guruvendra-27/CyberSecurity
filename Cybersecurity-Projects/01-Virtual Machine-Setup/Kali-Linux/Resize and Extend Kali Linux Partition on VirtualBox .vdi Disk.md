@@ -49,7 +49,7 @@ Before starting, ensure you have the following:
   ```bash
   VBoxManage modifymedium disk "C:\Kali Linux\dragon\dragon\dragon_7.vdi" --resize 100000
   ```
-  - Replace `C:\path\to\dragon_7.vdi` with the your full path of `.vdi` file.
+  - Replace `C:\Kali Linux\dragon\dragon\dragon_7.vdi` with the your full path of `.vdi` file.
   - Replace `100000` with the desired size in MB (e.g., `100000` = 100GB).
 
 ### 1.5 Verify the New Disk Size
