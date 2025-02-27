@@ -1,22 +1,16 @@
 # Resize and Extend Kali Linux Partition on VirtualBox `.vdi` Disk
 
-A step-by-step guide to resize VirtualBox `.vdi` disks and extend partitions in Kali Linux. This guide is designed for beginners and advanced users alike, providing clear instructions and troubleshooting tips.
+A step-by-step guide to resize VirtualBox `.vdi` disks and extend partitions in Kali Linux. This guide is designed for beginners and advanced users to providing clear instructions and troubleshooting tips.
 
 ---
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Prerequisites](#prerequisites)
-3. [Step 1: Resize the Virtual Disk in VirtualBox](#step-1-resize-the-virtual-disk-in-virtualbox)
-4. [Step 2: Extend the Partition in Kali Linux](#step-2-extend-the-partition-in-kali-linux)
-5. [Troubleshooting](#troubleshooting)
-6. [Contributing](#contributing)
-7. [Support](#support)
-
----
-
-## Introduction
-This guide walks you through the process of resizing a VirtualBox `.vdi` disk and extending the partition in Kali Linux to utilize the additional space. Whether you're running out of disk space or planning to expand your VM's storage, this guide has you covered.
+1. [Prerequisites](#prerequisites)
+2. [Step 1: Resize the Virtual Disk in VirtualBox](#step-1-resize-the-virtual-disk-in-virtualbox)
+3. [Step 2: Extend the Partition in Kali Linux](#step-2-extend-the-partition-in-kali-linux)
+4. [Troubleshooting](#troubleshooting)
+5. [Contributing](#contributing)
+6. [Support](#support)
 
 ---
 
