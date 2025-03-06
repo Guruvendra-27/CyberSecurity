@@ -96,6 +96,29 @@ sudo fsck -y /dev/sdX && sudo smartctl -H /dev/sdX
 
 ---
 
+## Shell Customization Commands
+These commands help personalize and configure your shell environment.
+
+```bash
+# Change the shell prompt symbol to a skull icon
+sed -i 's/prompt_symbol=㉿/prompt_symbol=💀/' ~/.zshrc
+
+# Apply changes immediately
+source ~/.zshrc
+```
+
+---
+
+## Fresh Install Commands
+These commands help restore default shell configurations from the system skeleton directory.
+
+```bash
+# Copy default bash and zsh configurations to home directory
+cp -i /etc/skel/.{bash,zsh}rc ~/
+```
+
+---
+
 ## File and Directory Management
 These commands help you navigate, organize, and manage files in Kali Linux.
 
@@ -164,3 +187,4 @@ nmap -sV <target-ip>  # Checks which services are running on a target
 ---
 
 By following this guide, you can efficiently use Kali Linux terminal commands for system management, networking, and penetration testing. Save this guide as a reference for your projects and share it with others on GitHub.
+
