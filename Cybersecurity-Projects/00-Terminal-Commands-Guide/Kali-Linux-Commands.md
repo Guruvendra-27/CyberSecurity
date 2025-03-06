@@ -163,4 +163,4 @@ nmap -sV <target-ip>  # Checks which services are running on a target
 
 ---
 
-By following this guide, you can efficiently use Kali Linux terminal commands for system management, networking, and penetration testing. Save this guide as a reference for your projects and share it with others on GitHub! 🚀
+By following this guide, you can efficiently use Kali Linux terminal commands for system management, networking, and penetration testing. Save this guide as a reference for your projects and share it with others on GitHub.
