@@ -107,9 +107,7 @@ sed -i 's/prompt_symbol=㉿/prompt_symbol=💀/' ~/.zshrc
 source ~/.zshrc
 ```
 
----
-
-## Fresh Install Commands
+## Restores Shell Command
 These commands help restore default shell configurations from the system skeleton directory.
 
 ```bash
