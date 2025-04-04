@@ -97,7 +97,7 @@ sudo fsck -y /dev/sdX && sudo smartctl -H /dev/sdX
 ---
 
 ## Shell Customization Commands
-These commands help personalize and configure your shell environment.
+These commands help personalize and configure your shell environment. (Adding Skull to root)
 
 ```bash
 # Change the shell prompt symbol to a skull icon
