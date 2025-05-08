@@ -8,8 +8,10 @@ This project provides a comprehensive, step-by-step guide to installing and conf
 ### ⬇️ Download Splunk
 
 1. Navigate to the [official Splunk Free download page](https://www.splunk.com/en_us/download.html).
-2. Select the appropriate version of Splunk based on your operating system (Windows, Linux, or macOS).
-3. Click on the download link and save the file to your local machine.
+2. If you **don’t have an account**, you'll need to **register** to create a Splunk account. Simply follow the registration instructions to sign up and gain access to the Splunk interface.
+3. If you **already have an account**, you can just log in with your existing credentials.
+4. Select the appropriate version of Splunk based on your operating system (Windows, Linux, or macOS).
+5. Click on the download link and save the file to your local machine.
 
 ### 💻 Install Splunk
 
