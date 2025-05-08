@@ -3,24 +3,53 @@
 ## 📦 Project Overview
 This project provides a comprehensive, step-by-step guide to installing and configuring Splunk within a virtualized environment, such as VMware. The guide also includes the optional setup of ingesting Windows Event Logs and Sysmon data into Splunk for enhanced cybersecurity monitoring and analysis.
 
-## 🧠 Install Splunk
+---
+## ⚡ Quick Note: Lab Machine Setup (3 Machines)
+
+You’ll need **three machines** for this lab setup:
+
+- **Kali Linux (Attacker Machine)**  
+  Used to simulate attacks.
+
+- **Windows (Target Machine)**  
+  This is the machine being attacked.
+
+- **Windows VM (Splunk Monitoring Machine)**  
+  This VM runs **Splunk** to collect and monitor logs from both the **target Windows machine** and the **Kali attacker machine**.
+
+> 💡 **Optional:** If you don’t want to use a third VM, you can install Splunk directly on your **main computer** instead. It’s totally up to you!
+---
+
+## 🧠 Installation of Splunk
 
 ### ⬇️ Download Splunk
 
-1. Navigate to the [official Splunk Free download page](https://www.splunk.com/en_us/download.html).
-2. If you **don’t have an account**, you'll need to **register** to create a Splunk account. Simply follow the registration instructions to sign up and gain access to the Splunk interface.
-3. If you **already have an account**, you can just log in with your existing credentials.
-4. Select the appropriate version of Splunk based on your operating system (Windows, Linux, or macOS).
-5. Click on the download link and save the file to your local machine.
+1. **Navigate to the official Splunk Free download page**.  
+   🔗 [Splunk Free Download](https://www.splunk.com/en_us/download.html)
+
+2. **Create a Splunk Account**:
+
+   * If you **don’t have an account**, you'll need to **register** to create a Splunk account. Follow the instructions to sign up and gain access to the Splunk interface.
+   * If you **already have an account**, simply **log in** with your existing credentials.
+
+3. **Select the appropriate version** based on your operating system:
+
+   * 🪟 **Windows**: Download the `.msi` installer.
+   * 🐧 **Linux**: Download the `.tgz` package.
+   * 🍏 **macOS**: Select the appropriate version for macOS.
+
+4. **Click the download link** and save the file to your local machine.
+
+---
 
 ### 💻 Install Splunk
 
-- **🪟 Windows**: 
+ **🪟 Windows**: 
   1. Run the downloaded `.msi` installer.
   2. Follow the default installation settings for a smooth and easy setup.
   3. Choose whether you want Splunk to start automatically as a service upon boot.
 
-- **🐧 Linux**: 
+ **🐧 Linux**: 
   1. Download the `.tgz` package from the Splunk website.
   2. Extract the files to a directory of your choice.
   3. Follow the instructions in the README file for installation. Typically, you’ll run an installation script to configure the system.
